@@ -36,6 +36,7 @@ export const ContactsPage = (props) => {
             value={name} 
             onChange={(event) => setName(event.target.value)}  
             placeholder="Your Name"
+            required
           />
         </label>
         

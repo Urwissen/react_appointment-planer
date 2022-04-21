@@ -34,6 +34,7 @@ export const AppointmentsPage = (props) => {
             value={title} 
             onChange={(event) => setTitle(event.target.value)}  
             placeholder="Event Title"
+            required
           />
         </label>
         
@@ -44,6 +45,7 @@ export const AppointmentsPage = (props) => {
             value={contact} 
             onChange={(event) => setContact(event.target.value)}  
             placeholder="Contact Name"
+            required
           />
         </label>
 
@@ -52,7 +54,8 @@ export const AppointmentsPage = (props) => {
             name="date"
             type="date" 
             value={date} 
-            onChange={(event) => setDate(event.target.value)}  
+            onChange={(event) => setDate(event.target.value)}
+            required
           />
         </label> 
 
@@ -61,7 +64,8 @@ export const AppointmentsPage = (props) => {
             name="time"
             type="time" 
             value={time} 
-            onChange={(event) => setTime(event.target.value)}  
+            onChange={(event) => setTime(event.target.value)}
+            required 
           />
         </label> 
 
